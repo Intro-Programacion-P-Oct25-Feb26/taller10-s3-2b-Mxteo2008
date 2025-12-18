@@ -74,13 +74,16 @@ public class Problema04 {
         }
 
         if (contadorIguales == 6) {
-            reporte = String.format("%s\nLa matriz A es igual a la matriz B", reporte);
+            reporte = String.format("%s\nLa matriz A es igual a la matriz B", 
+                    reporte);
 
         } else if (contadorMenores == 0 && contadorMayores > 0) {
-            reporte = String.format("%s\nLa matriz A es mayor que la matriz B", reporte);
+            reporte = String.format("%s\nLa matriz A es mayor que la matriz B", 
+                    reporte);
 
         } else {
-            reporte = String.format("%s\nLa matriz A no es mayor que la matriz B", reporte);
+            reporte = String.format("%s\nLa matriz A no es mayor que la matriz "
+                    + "B", reporte);
         }
 
         System.out.println(reporte);
