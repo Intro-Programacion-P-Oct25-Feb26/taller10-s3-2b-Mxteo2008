@@ -11,7 +11,7 @@ public class Problema03 {
             {true, true, false, true, true, false}
         };
 
-        int zonasF = 0;
+        int zonasFallos = 0;
         String reporte = "";
 
         for (int i = 0; i < sensores.length; i++) {
@@ -23,7 +23,7 @@ public class Problema03 {
                 }
             }
             if (sinFallos) {
-                zonasF++;
+                zonasFallos = zonasFallos + 1;
                 reporte = String.format("%sZona %d: Funciona sin fallos\n",
                         reporte, (i + 1));
             } else {
@@ -34,7 +34,7 @@ public class Problema03 {
         }
 
         reporte = String.format("%s\nTotal de zonas sin fallos: %d",
-                reporte, zonasF);
+                reporte, zonasFallos);
 
         System.out.println(reporte);
 
