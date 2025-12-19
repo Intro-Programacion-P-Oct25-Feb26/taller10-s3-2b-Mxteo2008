@@ -21,9 +21,11 @@ public class Problema05 {
         String mensaje = "";
 
         for (int i = 0; i < estudiantes.length; i++) {
+
             for (int j = 0; j < estudiantes[i].length; j++) {
 
                 String nombre = estudiantes[i][j];
+
                 char letra = Character.toLowerCase(nombre.charAt(0));
 
                 switch (letra) {
@@ -34,9 +36,8 @@ public class Problema05 {
                         break;
                 }
             }
-
         }
-        System.out.printf("Estudiantes con inicial S, P o T: \n%s\n",
-                mensaje);
+
+        System.out.printf("Estudiantes con inicial S, P o T: \n%s\n", mensaje);
     }
 }

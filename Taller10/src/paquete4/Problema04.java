@@ -5,10 +5,6 @@
  */
 package paquete4;
 
-/**
- *
- * @author reroes
- */
 import java.util.Scanner;
 
 public class Problema04 {
@@ -54,33 +50,24 @@ public class Problema04 {
             reporte = String.format("%s\n", reporte);
         }
 
-        int contadorMenores = 0;
-        int contadorMayores = 0;
-        int contadorIguales = 0;
+        int contadorMenores = 0; 
+        int contadorMayores = 0; 
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 2; j++) {
-
                 if (A[i][j] < B[i][j]) {
                     contadorMenores++;
                 }
                 if (A[i][j] > B[i][j]) {
                     contadorMayores++;
                 }
-                if (A[i][j] == B[i][j]) {
-                    contadorIguales++;
-                }
             }
         }
 
-        if (contadorIguales == 6) {
-            reporte = String.format("%s\nLa matriz A es igual a la matriz B", 
-                    reporte);
-
-        } else if (contadorMenores == 0 && contadorMayores > 0) {
+      
+        if (contadorMenores == 0 && contadorMayores > 0) {
             reporte = String.format("%s\nLa matriz A es mayor que la matriz B", 
                     reporte);
-
         } else {
             reporte = String.format("%s\nLa matriz A no es mayor que la matriz "
                     + "B", reporte);
